@@ -15,3 +15,11 @@ http config file, default.conf defines the www directory of www based off app ro
 
 
 Heroku boots based off procfile and php discovery
+
+
+
+Config:
+
+heroku addons:add scheduler:standard 
+heroku config:add LD_LIBRARY_PATH=/app/php/ext:/app/apache/lib
+./php/bin/php /app/www/www/index.php 
