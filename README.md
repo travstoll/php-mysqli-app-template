@@ -25,3 +25,5 @@ heroku addons:open scheduler
 heroku config:add LD_LIBRARY_PATH=/app/php/ext:/app/apache/lib
 ./php/bin/php /app/www/workers/work.php
 bin/php /app/www/workers/work.php 
+
+can also define a worker type in the procfile and have the scheduler run the process name like cron
