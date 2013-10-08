@@ -20,6 +20,8 @@ Heroku boots based off procfile and php discovery
 
 Config:
 
-heroku addons:add scheduler:standard 
+heroku addons:add scheduler:standard
+heroku addons:open scheduler 
 heroku config:add LD_LIBRARY_PATH=/app/php/ext:/app/apache/lib
-./php/bin/php /app/www/wokers/work.php 
+./php/bin/php /app/www/workers/work.php
+bin/php /app/www/workers/work.php 
