@@ -22,4 +22,4 @@ Config:
 
 heroku addons:add scheduler:standard 
 heroku config:add LD_LIBRARY_PATH=/app/php/ext:/app/apache/lib
-./php/bin/php /app/www/www/index.php 
+./php/bin/php /app/www/wokers/work.php 
